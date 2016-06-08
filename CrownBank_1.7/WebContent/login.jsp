@@ -29,7 +29,8 @@
 
 <font color = red> Wrong username and/or password! </font> 
 
-<% } %>
+<% request.setAttribute("failedLogin",null);
+} %>
 <div id="footer">
 Copyright © Michael Romer and Jesper Douglas
 </div>

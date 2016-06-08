@@ -80,10 +80,7 @@ public class Login extends HttpServlet {
 			out.println("Login procedure call unsuccesful");
 			e.printStackTrace();
 		} 
-		
-		
-		
-		
+
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

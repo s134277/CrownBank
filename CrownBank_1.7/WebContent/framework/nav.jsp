@@ -9,11 +9,6 @@
 <Form action = "login.jsp">
 <input type = "Submit" value = "Login" />
 </Form>
-<%} else{ %>
-<Form action = "home.jsp">
-<input type = "Submit" value = "Logout" />
-</Form>
-<% } %>
 
 <br>
 
@@ -22,6 +17,21 @@
 </Form>
 
 <br>
+<%} else{ %>
+<Form action = "home.jsp">
+<input type = "Submit" value = "Logout" />
+</Form>
+
+<br>
+<Form action = "editAcc.jsp">
+<input type = "Submit" value = "Edit Account" />
+</Form>
+
+<% } %>
+
+<br>
+
+
 
 <Form action = "home.jsp">
 <input type = "Submit" value = "Home" />
