@@ -1,10 +1,19 @@
+<%! 
+	public boolean isLoggedIn = false; 
+%>
+
 <center>
 
 <br>
-
+<%if(isLoggedIn == false) {%>
 <Form action = "login.jsp">
 <input type = "Submit" value = "Login" />
 </Form>
+<%} else{ %>
+<Form action = "home.jsp">
+<input type = "Submit" value = "Logout" />
+</Form>
+<% } %>
 
 <br>
 
@@ -14,7 +23,7 @@
 
 <br>
 
-<Form action = "index.jsp">
+<Form action = "home.jsp">
 <input type = "Submit" value = "Home" />
 </Form>
 

@@ -25,7 +25,11 @@
         <p class="submit"><input type="submit" name="commit" value="Login"></p>
       </form>
     </div>
+<%if(request.getAttribute("failedLogin")!=null){ %>
 
+<font color = red> Wrong username and/or password! </font> 
+
+<% } %>
 <div id="footer">
 Copyright © Michael Romer and Jesper Douglas
 </div>

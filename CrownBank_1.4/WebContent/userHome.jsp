@@ -11,22 +11,22 @@
 <div id="header">
 <img src="pictures/CrownBankLogo2.png" alt="Logo" width="800" height="140">
 </div>
-
+<% isLoggedIn = true; %>
 <div id="nav">
-<%@ include file="framework/nav.jsp" %>
+<%@include file="framework/nav.jsp" %>
 </div>
 
 <div id="section">
 <h1>
-Welcome!
+You are logged in!
 </h1>
-<p> Hello and welcome to our online banking application!<br>
+
+Welcome <%= request.getParameter("login")%>
 
 </div>
 
 <div id="footer">
 Copyright © Michael Romer & Jesper Douglas
 </div>
-
 </body>
 </html>
